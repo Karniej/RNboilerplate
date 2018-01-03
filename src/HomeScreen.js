@@ -1,13 +1,19 @@
 // @flow
 
 import * as React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { StyleSheet, Text, View, Button, Image } from 'react-native';
 
 class HomeScreen extends React.Component<{ navigation: any }> {
+  static navigationOptions = {
+    tabBarLabel: 'Home',
+    drawerLabel: 'Home',
+  };
+
   render() {
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
+        <Button title="DRR" onPress={() => navigate('DrawerToggle')} />
         <Text style={styles.welcome}>Welcome to Home Screen</Text>
         <Button title="Goto Second" onPress={() => navigate('Second')} />
       </View>

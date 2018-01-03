@@ -1,13 +1,24 @@
 // @flow
 
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, Button } from 'react-native';
 
-const SecondScreen = () => (
-  <View style={styles.container}>
-    <Text style={styles.welcome}>Welcome to xx Screen</Text>
-  </View>
-);
+class SecondScreen extends React.Component<{ navigation: any }> {
+  static navigationOptions = {
+    tabBarLabel: 'Second',
+    drawerLabel: 'Second',
+  };
+  render() {
+    const { navigate } = this.props.navigation;
+    return (
+      <View style={styles.container}>
+        <Button title="DRR" onPress={() => navigate('DrawerToggle')} />
+        <Text style={styles.welcome}>Welcome to Second Screen</Text>
+        <Button title="Home" onPress={() => navigate('Home')} />
+      </View>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   container: {
