@@ -11,6 +11,7 @@
     "flow coverage": "flow coverage"
   },
   "dependencies": {
+    "flow-typed": "^2.2.3",
     "react": "16.0.0",
     "react-native": "0.51.0",
     "react-navigation": "^1.0.0-beta.22",
@@ -27,7 +28,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
-    "flow-bin": "0.57.0",
+    "flow-bin": "0.53.1",
     "jest": "22.0.4",
     "prettier-eslint": "^8.7.0",
     "react-test-renderer": "16.0.0"

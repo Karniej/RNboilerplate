@@ -1,9 +1,9 @@
 // @flow
 
-import React from 'react';
+import * as React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
-class HomeScreen extends React.Component {
+class HomeScreen extends React.Component<{ navigation: any }> {
   render() {
     const { navigate } = this.props.navigation;
     return (

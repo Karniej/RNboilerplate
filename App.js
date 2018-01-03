@@ -21,9 +21,6 @@ const App = StackNavigator(
       navigationOptions: {
         title: 'Second',
       },
-      First: {
-        screen: App,
-      },
     },
   },
   {
