@@ -12,7 +12,6 @@ class SecondScreen extends React.Component<{ navigation: any }> {
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
-        <Button title="DRR" onPress={() => navigate('DrawerToggle')} />
         <Text style={styles.welcome}>Welcome to Second Screen</Text>
         <Button title="Home" onPress={() => navigate('Home')} />
       </View>
