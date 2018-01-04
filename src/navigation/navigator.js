@@ -3,6 +3,7 @@
 import { StackNavigator } from 'react-navigation';
 import HomeScreen from '../components/screens/HomeScreen';
 import SecondScreen from '../components/screens/SecondScreen';
+import ThirdScreen from '../components/screens/ThirdScreen';
 
 const navigator = StackNavigator({
   Home: {
@@ -10,6 +11,9 @@ const navigator = StackNavigator({
   },
   Second: {
     screen: SecondScreen,
+  },
+  Third: {
+    screen: ThirdScreen,
   },
 });
 

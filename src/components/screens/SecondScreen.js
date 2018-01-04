@@ -5,15 +5,14 @@ import { StyleSheet, Text, View, Button } from 'react-native';
 
 class SecondScreen extends React.Component<{ navigation: any }> {
   static navigationOptions = {
-    tabBarLabel: 'Second',
-    drawerLabel: 'Second',
+    title: 'Second',
   };
   render() {
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to Second Screen</Text>
-        <Button title="Home" onPress={() => navigate('Home')} />
+        <Button title="Third" onPress={() => navigate('Third')} />
       </View>
     );
   }
