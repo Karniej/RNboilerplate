@@ -3,9 +3,13 @@
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 
-class SecondScreen extends React.Component<{ navigation: any }> {
+type Props = {
+  navigation: any,
+};
+class SecondScreen extends React.Component<Props> {
   static navigationOptions = {
     title: 'Second',
+    drawerLabel: 'Second',
   };
   render() {
     const { navigate } = this.props.navigation;

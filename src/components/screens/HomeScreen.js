@@ -4,9 +4,14 @@ import * as React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import { NavigationActions } from 'react-navigation';
 
-class HomeScreen extends React.Component<{ navigation: any }> {
+type Props = {
+  navigation: any,
+};
+
+class HomeScreen extends React.Component<Props> {
   static navigationOptions = {
     title: 'Home',
+    drawerLabel: 'Home',
   };
 
   render() {
@@ -14,6 +19,7 @@ class HomeScreen extends React.Component<{ navigation: any }> {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to Home Screen</Text>
+        <Button title="Drawer" onPress={() => this.props.navigation.navigate('DrawerOpen')} />
         <Button title="Goto Second" onPress={() => navigate('Second')} />
       </View>
     );

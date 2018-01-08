@@ -1,19 +1,14 @@
 // @flow
-
 import { StackNavigator } from 'react-navigation';
-import HomeScreen from '../components/screens/HomeScreen';
-import SecondScreen from '../components/screens/SecondScreen';
-import ThirdScreen from '../components/screens/ThirdScreen';
+import LoginStack from './LoginStack';
+import DrawerNavigation from './DrawerNavigation';
 
 const navigator = StackNavigator({
-  Home: {
-    screen: HomeScreen,
+  loginStack: {
+    screen: LoginStack,
   },
-  Second: {
-    screen: SecondScreen,
-  },
-  Third: {
-    screen: ThirdScreen,
+  drawerStack: {
+    screen: DrawerNavigation,
   },
 });
 
