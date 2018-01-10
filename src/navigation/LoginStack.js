@@ -3,7 +3,7 @@ import { StackNavigator } from 'react-navigation';
 
 const LoginStack = StackNavigator(
   {
-    loginScreen: { screen: LoginScreen },
+    LoginScreen: { screen: LoginScreen },
     // signupScreen: { screen: SignupScreen },
     // forgottenPasswordScreen: {
     //   screen: ForgottenPasswordScreen,

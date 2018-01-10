@@ -19,7 +19,6 @@ class HomeScreen extends React.Component<Props> {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to Home Screen</Text>
-        <Button title="Drawer" onPress={() => this.props.navigation.navigate('DrawerOpen')} />
         <Button title="Goto Second" onPress={() => navigate('Second')} />
       </View>
     );

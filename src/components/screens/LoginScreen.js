@@ -18,7 +18,7 @@ class LoginScreen extends React.Component<Props> {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>This is LoginScreen</Text>
-        <Button title="Log In" onPress={() => navigate('drawerStack')} />
+        <Button title="Log In" onPress={() => navigate('DrawerStack')} />
       </View>
     );
   }
