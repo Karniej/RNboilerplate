@@ -1,22 +1,24 @@
 // @flow
 
-import React from 'react';
+import * as React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
+import { NavigationActions } from 'react-navigation';
 
 type Props = {
   navigation: any,
 };
-class ThirdScreen extends React.Component<Props> {
+
+class LoginScreen extends React.Component<Props> {
   static navigationOptions = {
-    title: 'Third',
-    drawerLabel: 'Third',
+    title: 'Login',
   };
+
   render() {
     const { navigate } = this.props.navigation;
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to Third Screen</Text>
-        <Button title="Back Home" onPress={() => navigate('Home')} />
+      <View testID="loginScreen" style={styles.container}>
+        <Text style={styles.welcome}>This is LoginScreen</Text>
+        <Button testID="logIn" title="Log In" onPress={() => navigate('DrawerStack')} />
       </View>
     );
   }
@@ -27,7 +29,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'violet',
+    backgroundColor: '#F5FCFF',
   },
   welcome: {
     fontSize: 20,
@@ -35,5 +37,4 @@ const styles = StyleSheet.create({
     margin: 10,
   },
 });
-
-export default ThirdScreen;
+export default LoginScreen;

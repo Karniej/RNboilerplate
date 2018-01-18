@@ -1,6 +1,6 @@
-import HomeScreen from '../components/screens/HomeScreen';
-import SecondScreen from '../components/screens/SecondScreen';
-import ThirdScreen from '../components/screens/ThirdScreen';
+import HomeScreen from '../screens/HomeScreen/HomeScreen';
+import SecondScreen from '../screens/SecondScreen/SecondScreen';
+import ThirdScreen from '../screens/ThirdScreen/ThirdScreen';
 
 // Screens after logged in
 const screens = {

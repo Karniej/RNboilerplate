@@ -10,6 +10,7 @@ This Boilerplate contains:<br>
 4. Hooked up Jest for testing - I have to yet configurate some boilerplate tests.<br>
 5. Babel-esling and Prettier-eslint as dev dependency. <br>
 6. Redux-logger middleware for nice console debugging redux store. <br>
+7. Added Jest and Detox for Unit/E2E testing.
 
 I wanted to keep this Boilerplate as simple as possible, but I am stil considering adding a few packages like :<br>
 CodePush,<br>

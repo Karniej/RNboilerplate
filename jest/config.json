@@ -1,0 +1,9 @@
+{
+  "preset": "react-native",
+  "rootDir": "../",
+  "testPathIgnorePatterns": ["__e2e__", "node_modules"],
+  "transformIgnorePatterns": ["node_modules/(?!react-native|react-navigation)/"],
+  "transform": {
+    "^.+\\.js$": "babel-jest"
+  }
+}

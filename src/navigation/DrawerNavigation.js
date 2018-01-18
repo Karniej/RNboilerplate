@@ -14,7 +14,9 @@ const DrawerNavigation = StackNavigator(
       title: 'Welcome!',
       headerTintColor: 'white',
       gesturesEnabled: false,
-      headerRight: <Button title="DR" onPress={() => navigation.navigate('DrawerToggle')} />,
+      headerLeft: (
+        <Button testID="DR" title="DR" onPress={() => navigation.navigate('DrawerToggle')} />
+      ),
     }),
   },
 );
