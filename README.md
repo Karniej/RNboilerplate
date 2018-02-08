@@ -20,8 +20,13 @@ yarn global add react-native-rename<br>
 Example<br>
 react-native-rename TravelApp<br>
 
+In order to make Detox Tests working you have to go to <br>
+/../android/app/src/androidTest/java/com/boilerplate/DetoxTest.java and change the<br>
+package com.boilerplate to package com.yourappname<br>
+
+You should also change the
+
 I wanted to keep this Boilerplate as simple as possible, but I am stil considering adding a few packages like :<br>
-CodePush,<br>
 Styled-Components,<br>
 Native-Base or Material Design component library,<br>
 Some-kind of Onboarding package,<br>
