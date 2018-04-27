@@ -1,8 +1,6 @@
-import 'react-native';
+import renderer from 'react-test-renderer';
 import React from 'react';
 import ThirdScreen from '../ThirdScreen';
-
-import renderer from 'react-test-renderer';
 
 test('renders correctly', () => {
   const navigation = { navigate: jest.fn() };
