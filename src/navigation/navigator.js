@@ -1,4 +1,3 @@
-// @flow
 import { StackNavigator } from 'react-navigation';
 import { Animated, Easing } from 'react-native';
 import LoginStack from './LoginStack';

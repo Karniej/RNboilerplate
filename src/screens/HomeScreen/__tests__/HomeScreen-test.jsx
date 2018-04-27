@@ -1,8 +1,6 @@
-import 'react-native';
 import React from 'react';
-import HomeScreen from '../HomeScreen';
-
 import renderer from 'react-test-renderer';
+import HomeScreen from '../HomeScreen';
 
 test('Renders correctly, expect onpress to be defined, but not called', () => {
   const navigation = { navigate: jest.fn() };

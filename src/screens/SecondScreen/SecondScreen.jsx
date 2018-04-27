@@ -1,12 +1,9 @@
-// @flow
-
 import React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
+import { Text, View, Button } from 'react-native';
+import PropTypes from 'prop-types';
+import styles from './styles';
 
-type Props = {
-  navigation: any,
-};
-class SecondScreen extends React.Component<Props> {
+class SecondScreen extends React.Component {
   static navigationOptions = {
     title: 'Second',
     drawerLabel: 'Second',
@@ -21,19 +18,7 @@ class SecondScreen extends React.Component<Props> {
     );
   }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-});
-
+SecondScreen.propTypes = {
+  navigation: PropTypes.func.isRequired,
+};
 export default SecondScreen;
