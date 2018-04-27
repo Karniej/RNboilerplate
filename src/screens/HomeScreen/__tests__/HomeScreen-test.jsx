@@ -7,5 +7,6 @@ test('Renders correctly, expect onpress to be defined, but not called', () => {
   const onPress = jest.fn();
   expect(onPress).toBeDefined();
   expect(onPress).not.toBeCalled();
+  expect(onPress).not.toBeCalled();
   expect(renderer.create(<HomeScreen navigation={navigation} onPress={onPress} />).toJSON()).toMatchSnapshot();
 });
