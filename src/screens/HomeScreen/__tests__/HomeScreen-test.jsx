@@ -8,5 +8,6 @@ test('Renders correctly, expect onpress to be defined, but not called', () => {
   expect(onPress).toBeDefined();
   expect(onPress).not.toBeCalled();
   expect(onPress).not.toBeCalled();
+  expect(onPress).not.toBeCalled();
   expect(renderer.create(<HomeScreen navigation={navigation} onPress={onPress} />).toJSON()).toMatchSnapshot();
 });
