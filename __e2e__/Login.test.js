@@ -4,7 +4,7 @@ describe('LoginScreen', () => {
     try {
       await device.reloadReactNative();
     } catch (error) {
-      console.log('error');
+      await device.reloadReactNative();
     }
   });
   it('should login ', async () => {

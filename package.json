@@ -9,10 +9,10 @@
     "test-android-debug": "detox build -c android.emu.debug && detox test -c android.emu.debug --loglevel verbose && jest --testPathPattern . --config=./jest/config.json",
     "test-ios-debug": "detox build -c ios.sim.debug && detox test -c ios.sim.debug",
     "test-unit": "jest --testPathPattern . --config=./jest/config.json",
-    "test": "yarn test:unit && detox -c test.sim.release"
+    "test": "yarn test-unit && detox -c test.sim.release"
   },
   "dependencies": {
-    "mocha": "^5.0.0",
+    "patch-package": "^5.1.1",
     "prop-types": "^15.6.1",
     "react": "16.0.0",
     "react-dom": "^16.2.0",
@@ -38,6 +38,7 @@
     "eslint-plugin-jsx-a11y": "^6.0.3",
     "eslint-plugin-react": "^7.5.1",
     "jest": "^22.1.0",
+    "postinstall-postinstall": "^1.0.0",
     "prettier-eslint": "^8.7.0",
     "react-test-renderer": "16.0.0"
   },

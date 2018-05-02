@@ -30,7 +30,7 @@ class ThirdScreen extends React.Component {
 }
 ThirdScreen.propTypes = {
   navigation: PropTypes.shape({
-    dispatch: PropTypes.func.isRequired,
+    dispatch: PropTypes.func,
   }).isRequired,
 };
 export default ThirdScreen;
