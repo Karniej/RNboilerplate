@@ -21,7 +21,7 @@ class HomeScreen extends React.Component {
 }
 
 HomeScreen.propTypes = {
-  navigation: PropTypes.func.isRequired,
+  navigation: PropTypes.shape({ navigate: PropTypes.func.isRequired }).isRequired,
 };
 
 export default HomeScreen;

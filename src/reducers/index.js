@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux';
-import navReducer from './navReducer';
+import dummyReducer from './dummyReducer';
 
 const appReducer = combineReducers({
-  nav: navReducer,
+  dummyState: dummyReducer,
 });
 
 export default appReducer;

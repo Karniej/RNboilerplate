@@ -18,7 +18,7 @@ class LoginScreen extends React.Component {
   }
 }
 LoginScreen.propTypes = {
-  navigation: PropTypes.func.isRequired,
+  navigation: PropTypes.shape({ navigate: PropTypes.func.isRequired }).isRequired,
 };
 
 export default LoginScreen;

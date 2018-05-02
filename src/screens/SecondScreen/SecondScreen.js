@@ -19,6 +19,6 @@ class SecondScreen extends React.Component {
   }
 }
 SecondScreen.propTypes = {
-  navigation: PropTypes.func.isRequired,
+  navigation: PropTypes.shape({ navigate: PropTypes.func.isRequired }).isRequired,
 };
 export default SecondScreen;
