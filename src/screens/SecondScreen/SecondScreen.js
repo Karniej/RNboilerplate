@@ -1,22 +1,24 @@
 import React from 'react';
-import { Text, View, Button } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 import styles from './styles';
 
 class SecondScreen extends React.Component {
   static navigationOptions = {
-    headerStyle: {
-      backgroundColor: '#00d664',
-    },
     title: 'Second',
     drawerLabel: 'Second',
+    headerStyle: {
+      backgroundColor: 'black',
+    },
   };
   render() {
     const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to Second Screen</Text>
-        <Button title="Third" onPress={() => navigate('Third')} />
+        <TouchableOpacity title="Third" onPress={() => navigate('Third')}>
+          <Text style={{ fontSize: 18, color: '#00d664' }}>Goto Third</Text>
+        </TouchableOpacity>
       </View>
     );
   }

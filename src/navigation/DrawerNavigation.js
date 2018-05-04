@@ -11,6 +11,9 @@ const DrawerNavigation = StackNavigator(
     headerMode: 'none',
     navigationOptions: ({ navigation }) => ({
       headerTintColor: 'white',
+      headerStyle: {
+        backgroundColor: 'black',
+      },
       gesturesEnabled: false,
       headerLeft: (
         <Icon

@@ -2,6 +2,7 @@ import { StackNavigator } from 'react-navigation';
 import { Animated, Easing } from 'react-native';
 import LoginStack from './LoginStack';
 import DrawerNavigation from './DrawerNavigation';
+import HomeScreen from '../screens/HomeScreen/HomeScreen';
 
 const noTransitionConfig = () => ({
   transitionSpec: {
