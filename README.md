@@ -30,12 +30,15 @@ Installation:<br>
 In order to make Detox Tests working you have to go to <br>
 /../android/app/src/androidTest/java/com/boilerplate/DetoxTest.java and change the<br>
 package com.boilerplate to your app name like this - package com.yourappname<br>
+Then replace the folder "boilerplate" name to "yourappname"<br>
 <br>
 Also you'll need to install applesimutils to run the detox cli:<br>
 
 > https://github.com/wix/AppleSimulatorUtils<br>
 > brew tap wix/brew<br>
 > brew install wix/brew/applesimutils<br>
+
+#### Currently there's some kind of bug in babel-plugin-jest-hoist, that's why I patched this package to avoid the bug and you'll have to run yarn patch-package before running your tests and everything will be fine.
 
 ### Future update ideas
 
