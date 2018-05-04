@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Text, View, Button } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
 import PropTypes from 'prop-types';
 import styles from './styles';
 
@@ -17,7 +17,9 @@ class HomeScreen extends React.Component {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to Home Screen</Text>
-        <Button testID="second" title="Goto Second" onPress={() => navigate('Second')} />
+        <TouchableOpacity testID="second" title="Goto Second" onPress={() => navigate('Second')}>
+          <Text style={{ fontSize: 18, color: '#00d664' }}>Goto Second</Text>
+        </TouchableOpacity>
       </View>
     );
   }

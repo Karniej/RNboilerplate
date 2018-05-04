@@ -1,24 +1,23 @@
 import React from 'react';
-import { Text, View, Button } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
 import NavigationActions from 'react-navigation/src/NavigationActions';
 import PropTypes from 'prop-types';
 import styles from './styles';
 
 class ThirdScreen extends React.Component {
   static navigationOptions = {
+    title: 'Third',
+    drawerLabel: 'Third',
     headerStyle: {
       backgroundColor: 'black',
     },
-    title: 'Third',
-    drawerLabel: 'Third',
   };
   render() {
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>Welcome to Third Screen</Text>
-        <Button
+        <TouchableOpacity
           testID="logout"
-          title="Back Home"
           onPress={() =>
             this.props.navigation.dispatch(NavigationActions.reset({
                 index: 0,
@@ -26,7 +25,9 @@ class ThirdScreen extends React.Component {
                 actions: [NavigationActions.navigate({ routeName: 'LoginStack' })],
               }))
           }
-        />
+        >
+          <Text style={{ fontSize: 18, color: '#00d664' }}>Logout</Text>
+        </TouchableOpacity>
       </View>
     );
   }
