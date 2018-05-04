@@ -14,15 +14,23 @@ This Boilerplate contains:<br>
 
 After cloning this repository I recommend using react-native-rename package - https://www.npmjs.com/package/react-native-rename <br>
 Installation:<br>
-yarn global add react-native-rename<br>
-(in the project folder) react-native-rename yourAppName<br>
+
+> yarn global add react-native-rename<br>
+> (in the project folder) react-native-rename yourAppName<br>
 
 Example<br>
 react-native-rename TravelApp<br>
 
+# Detox Tests
+
 In order to make Detox Tests working you have to go to <br>
 /../android/app/src/androidTest/java/com/boilerplate/DetoxTest.java and change the<br>
 package com.boilerplate to package com.yourappname<br>
+Also you'll need to install applesimutils from here:<br>
+
+> https://github.com/wix/AppleSimulatorUtils<br>
+> brew tap wix/brew<br>
+> brew install wix/brew/applesimutils<br>
 
 I wanted to keep this Boilerplate as simple as possible, but I am stil considering adding a few packages like :<br>
 Styled-Components,<br>
