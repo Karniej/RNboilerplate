@@ -5,7 +5,7 @@ exports[`renders correctly 1`] = `
   style={
     Object {
       "alignItems": "center",
-      "backgroundColor": "violet",
+      "backgroundColor": "#F5FCFF",
       "flex": 1,
       "justifyContent": "center",
     }
@@ -26,13 +26,9 @@ exports[`renders correctly 1`] = `
     Welcome to Third Screen
   </Text>
   <View
-    accessibilityComponentType="button"
+    accessibilityComponentType={undefined}
     accessibilityLabel={undefined}
-    accessibilityTraits={
-      Array [
-        "button",
-      ]
-    }
+    accessibilityTraits={undefined}
     accessible={true}
     collapsable={undefined}
     hasTVPreferredFocus={undefined}
@@ -54,32 +50,19 @@ exports[`renders correctly 1`] = `
     testID="logout"
     tvParallaxProperties={undefined}
   >
-    <View
+    <Text
+      accessible={true}
+      allowFontScaling={true}
+      ellipsizeMode="tail"
       style={
-        Array [
-          Object {},
-        ]
+        Object {
+          "color": "#00d664",
+          "fontSize": 18,
+        }
       }
     >
-      <Text
-        accessible={true}
-        allowFontScaling={true}
-        disabled={undefined}
-        ellipsizeMode="tail"
-        style={
-          Array [
-            Object {
-              "color": "#007AFF",
-              "fontSize": 18,
-              "padding": 8,
-              "textAlign": "center",
-            },
-          ]
-        }
-      >
-        Back Home
-      </Text>
-    </View>
+      Logout
+    </Text>
   </View>
 </View>
 `;
