@@ -5,6 +5,9 @@ import styles from './styles';
 
 class SecondScreen extends React.Component {
   static navigationOptions = {
+    headerStyle: {
+      backgroundColor: 'silver',
+    },
     title: 'Second',
     drawerLabel: 'Second',
   };

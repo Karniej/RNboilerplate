@@ -1,7 +1,6 @@
 import React from 'react';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { StackNavigator } from 'react-navigation';
-import { Button } from 'react-native';
 import DrawerStack from './DrawerStack';
 
 const DrawerNavigation = StackNavigator(
@@ -11,8 +10,9 @@ const DrawerNavigation = StackNavigator(
   {
     headerMode: 'none',
     navigationOptions: ({ navigation }) => ({
-      headerStyle: { backgroundColor: '#4C3E54' },
-      title: 'Welcome!',
+      headerStyle: {
+        backgroundColor: 'transparent',
+      },
       headerTintColor: 'white',
       gesturesEnabled: false,
       headerLeft: (

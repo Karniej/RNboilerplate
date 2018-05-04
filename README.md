@@ -11,6 +11,7 @@ This Boilerplate contains:<br>
 5.  Babel-eslint and Prettier-eslint as dev dependency. <br>
 6.  Redux-logger middleware for nice console debugging redux store. <br>
 7.  Added Detox for E2E testing.<br>
+8.  Linked react-native-vector-icons library.<br>
 
 ## Usage
 

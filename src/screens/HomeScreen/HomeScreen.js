@@ -7,6 +7,9 @@ class HomeScreen extends React.Component {
   static navigationOptions = {
     title: 'Home',
     drawerLabel: 'Home',
+    headerStyle: {
+      backgroundColor: 'brown',
+    },
   };
 
   render() {
