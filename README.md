@@ -28,12 +28,15 @@ Installation:<br>
 
 In order to make Detox Tests working you have to go to <br>
 /../android/app/src/androidTest/java/com/boilerplate/DetoxTest.java and change the<br>
-package com.boilerplate to package com.yourappname<br>
+package com.boilerplate to your app name like this - package com.yourappname<br>
+<br>
 Also you'll need to install applesimutils from here:<br>
 
 > https://github.com/wix/AppleSimulatorUtils<br>
 > brew tap wix/brew<br>
 > brew install wix/brew/applesimutils<br>
+
+### Future update ideas
 
 I wanted to keep this Boilerplate as simple as possible, but I am stil considering adding a few packages like :<br>
 Styled-Components,<br>
