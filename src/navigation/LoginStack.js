@@ -4,18 +4,12 @@ import LoginScreen from '../screens/LoginScreen/LoginScreen';
 const LoginStack = StackNavigator(
   {
     LoginScreen: { screen: LoginScreen },
-    // signupScreen: { screen: SignupScreen },
-    // forgottenPasswordScreen: {
-    //   screen: ForgottenPasswordScreen,
-    //   navigationOptions: { title: 'Forgot Password' },
-    // },
   },
   {
     headerMode: 'none',
     navigationOptions: {
       headerBackTitle: null,
       headerStyle: { backgroundColor: '#00d664' },
-      title: 'You are not logged in',
       headerTintColor: 'white',
     },
   },
