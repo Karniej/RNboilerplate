@@ -1,3 +1,4 @@
+/* eslint-env detox/detox, mocha */
 describe('Root', () => {
   beforeEach(async () => {
     try {

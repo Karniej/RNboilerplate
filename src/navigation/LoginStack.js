@@ -1,5 +1,5 @@
-import LoginScreen from '../screens/LoginScreen/LoginScreen';
 import { StackNavigator } from 'react-navigation';
+import LoginScreen from '../screens/LoginScreen/LoginScreen';
 
 const LoginStack = StackNavigator(
   {
@@ -14,7 +14,7 @@ const LoginStack = StackNavigator(
     headerMode: 'none',
     navigationOptions: {
       headerBackTitle: null,
-      headerStyle: { backgroundColor: '#E73536' },
+      headerStyle: { backgroundColor: 'brown' },
       title: 'You are not logged in',
       headerTintColor: 'white',
     },

@@ -1,17 +1,15 @@
-// @flow
-
 import * as React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
-import { NavigationActions } from 'react-navigation';
+import { Text, View, Button } from 'react-native';
+import PropTypes from 'prop-types';
+import styles from './styles';
 
-type Props = {
-  navigation: any,
-};
-
-class HomeScreen extends React.Component<Props> {
+class HomeScreen extends React.Component {
   static navigationOptions = {
     title: 'Home',
     drawerLabel: 'Home',
+    headerStyle: {
+      backgroundColor: 'brown',
+    },
   };
 
   render() {
@@ -25,17 +23,8 @@ class HomeScreen extends React.Component<Props> {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-});
+HomeScreen.propTypes = {
+  navigation: PropTypes.shape({ navigate: PropTypes.func.isRequired }).isRequired,
+};
+
 export default HomeScreen;

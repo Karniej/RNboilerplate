@@ -1,7 +1,6 @@
-// @flow
 import { createStore, applyMiddleware } from 'redux';
-import appReducer from './reducers';
 import { createLogger } from 'redux-logger';
+import appReducer from './reducers';
 
 const logger = createLogger();
 

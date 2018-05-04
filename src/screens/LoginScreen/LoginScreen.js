@@ -1,18 +1,12 @@
-// @flow
+import React from 'react';
+import { Text, View, Button } from 'react-native';
+import PropTypes from 'prop-types';
+import styles from './styles';
 
-import * as React from 'react';
-import { StyleSheet, Text, View, Button } from 'react-native';
-import { NavigationActions } from 'react-navigation';
-
-type Props = {
-  navigation: any,
-};
-
-class LoginScreen extends React.Component<Props> {
+class LoginScreen extends React.Component {
   static navigationOptions = {
     title: 'Login',
   };
-
   render() {
     const { navigate } = this.props.navigation;
     return (
@@ -23,18 +17,8 @@ class LoginScreen extends React.Component<Props> {
     );
   }
 }
+LoginScreen.propTypes = {
+  navigation: PropTypes.shape({ navigate: PropTypes.func.isRequired }).isRequired,
+};
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-});
 export default LoginScreen;

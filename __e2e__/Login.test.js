@@ -1,10 +1,12 @@
+/* eslint-env detox/detox, mocha */
 describe('LoginScreen', () => {
   beforeEach(async () => {
     try {
       await device.reloadReactNative();
-    } catch (error) {}
+    } catch (error) {
+      await device.reloadReactNative();
+    }
   });
-
   it('should login ', async () => {
     await waitFor(element(by.id('logIn')))
       .toBeVisible()
