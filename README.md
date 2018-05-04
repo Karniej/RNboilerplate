@@ -30,7 +30,7 @@ In order to make Detox Tests working you have to go to <br>
 /../android/app/src/androidTest/java/com/boilerplate/DetoxTest.java and change the<br>
 package com.boilerplate to your app name like this - package com.yourappname<br>
 <br>
-Also you'll need to install applesimutils from here:<br>
+Also you'll need to install applesimutils to run the detox cli:<br>
 
 > https://github.com/wix/AppleSimulatorUtils<br>
 > brew tap wix/brew<br>
