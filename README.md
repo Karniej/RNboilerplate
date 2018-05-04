@@ -24,7 +24,7 @@ Installation:<br>
 > For example:<br>
 > react-native-rename TravelApp<br>
 
-#### Currently there's some kind of bug in babel-plugin-jest-hoist, that's why I patched this package.<br>
+#### Currently there's some kind of bug in babel-plugin-jest-hoist, that's why I patched this package.
 #### Just run "yarn patch-package" before running your tests and everything will run as it should. 
 
 ### Future update ideas
