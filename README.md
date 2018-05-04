@@ -12,16 +12,19 @@ This Boilerplate contains:<br>
 6.  Redux-logger middleware for nice console debugging redux store. <br>
 7.  Added Detox for E2E testing.<br>
 
+## Usage
+
+### Renaming Project
+
 After cloning this repository I recommend using react-native-rename package - https://www.npmjs.com/package/react-native-rename <br>
 Installation:<br>
 
 > yarn global add react-native-rename<br>
 > (in the project folder) react-native-rename yourAppName<br>
+> For example:<br>
+> react-native-rename TravelApp<br>
 
-Example<br>
-react-native-rename TravelApp<br>
-
-# Detox Tests
+### Detox Tests
 
 In order to make Detox Tests working you have to go to <br>
 /../android/app/src/androidTest/java/com/boilerplate/DetoxTest.java and change the<br>
