@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
     "jest-serializer-enzyme": "^1.0.0",
     "patch-package": "^5.1.1",
     "prop-types": "^15.6.1",

@@ -7,7 +7,7 @@ This Boilerplate contains:<br>
 1.  AirBnb ESlint configuration. <br>
 2.  Redux state management connected. <br>
 3.  React Navigation with simple main Stack Navigator for Login screen and Drawer Navigator.<br>
-4.  Hooked up Jest for unit testing.<br>
+4.  Hooked up Jest and Enzyme for the best unit testing.<br>
 5.  Babel-eslint and Prettier-eslint as dev dependency. <br>
 6.  Redux-logger middleware for nice console debugging redux store. <br>
 7.  Added Detox for E2E testing.<br>
