@@ -7,7 +7,7 @@ import styles from './styles';
 class ThirdScreen extends React.Component {
   static navigationOptions = {
     headerStyle: {
-      backgroundColor: 'gold',
+      backgroundColor: 'black',
     },
     title: 'Third',
     drawerLabel: 'Third',

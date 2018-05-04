@@ -14,7 +14,7 @@ const LoginStack = StackNavigator(
     headerMode: 'none',
     navigationOptions: {
       headerBackTitle: null,
-      headerStyle: { backgroundColor: 'brown' },
+      headerStyle: { backgroundColor: '#00d664' },
       title: 'You are not logged in',
       headerTintColor: 'white',
     },

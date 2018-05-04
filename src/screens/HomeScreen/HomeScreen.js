@@ -8,7 +8,7 @@ class HomeScreen extends React.Component {
     title: 'Home',
     drawerLabel: 'Home',
     headerStyle: {
-      backgroundColor: 'brown',
+      backgroundColor: 'black',
     },
   };
 

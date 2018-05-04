@@ -10,9 +10,6 @@ const DrawerNavigation = StackNavigator(
   {
     headerMode: 'none',
     navigationOptions: ({ navigation }) => ({
-      headerStyle: {
-        backgroundColor: 'transparent',
-      },
       headerTintColor: 'white',
       gesturesEnabled: false,
       headerLeft: (
