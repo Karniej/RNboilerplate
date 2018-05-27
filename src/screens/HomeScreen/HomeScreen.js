@@ -15,11 +15,19 @@ class HomeScreen extends React.Component {
   render() {
     const { navigate } = this.props.navigation;
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to Home Screen</Text>
+      <View style={styles.mainContainer}>
+        <Text style={styles.welcome}>Netguru React Native Boilerplate</Text>
         <TouchableOpacity testID="second" title="Goto Second" onPress={() => navigate('Second')}>
           <Text style={{ fontSize: 18, color: '#00d664' }}>Goto Second</Text>
         </TouchableOpacity>
+        <View style={styles.container}>
+          <View style={[styles.subContainer, { backgroundColor: '#00d664' }]}>
+            <Text style={[styles.textStyle, { color: 'black' }]} />
+          </View>
+          <View style={[styles.subContainer, { backgroundColor: 'black' }]}>
+            <Text style={[styles.textStyle, { color: 'white' }]} />
+          </View>
+        </View>
       </View>
     );
   }
