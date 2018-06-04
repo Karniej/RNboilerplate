@@ -1,8 +1,9 @@
 import React from 'react'
-import Icon from 'react-native-vector-icons/Ionicons'
+import { Platform } from 'react-native'
 import { StackNavigator } from 'react-navigation'
 import DrawerStack from './DrawerStack'
-import { colors, constants } from '../config'
+import { colors } from '../config'
+import AppIcon from '../components/AppIcon/AppIcon'
 
 const DrawerNavigation = StackNavigator(
   {
@@ -18,11 +19,9 @@ const DrawerNavigation = StackNavigator(
         },
         gesturesEnabled: false,
         headerLeft: (
-          <Icon
-            name='md-menu'
+          <AppIcon
+            name={Platform.OS === 'ios' ? 'ios-menu-outline' : 'md-menu'}
             size={30}
-            color={colors.primaryColor}
-            style={{ marginLeft: constants.defaultMargin }}
             onPress={() => {
               return navigation.navigate('DrawerToggle')
             }}
