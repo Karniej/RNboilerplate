@@ -1,18 +1,18 @@
-import HomeScreen from '../screens/HomeScreen/HomeScreen';
-import SecondScreen from '../screens/SecondScreen/SecondScreen';
-import ThirdScreen from '../screens/ThirdScreen/ThirdScreen';
+import HomeScreen from '../screens/HomeScreen/HomeScreen'
+import SecondScreen from '../screens/SecondScreen/SecondScreen'
+import ThirdScreen from '../screens/ThirdScreen/ThirdScreen'
 
 // Screens after logged in
 const screens = {
   Home: {
-    screen: HomeScreen,
+    screen: HomeScreen
   },
   Second: {
-    screen: SecondScreen,
+    screen: SecondScreen
   },
   Third: {
-    screen: ThirdScreen,
-  },
-};
+    screen: ThirdScreen
+  }
+}
 
-export default screens;
+export default screens

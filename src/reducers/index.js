@@ -1,8 +1,8 @@
-import { combineReducers } from 'redux';
-import dummyReducer from './dummyReducer';
+import { combineReducers } from 'redux'
+import dummyReducer from './dummyReducer'
 
 const appReducer = combineReducers({
-  dummyState: dummyReducer,
-});
+  dummyState: dummyReducer
+})
 
-export default appReducer;
+export default appReducer

@@ -1,30 +1,17 @@
-import { StyleSheet } from 'react-native';
-
-const styles = StyleSheet.create({
-  mainContainer: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
+const styles = {
   container: {
     flex: 1,
     flexDirection: 'column',
-    display: 'none',
+    display: 'none'
   },
   subContainer: {
     flex: 2,
-    justifyContent: 'center',
+    justifyContent: 'center'
   },
   textStyle: {
     fontSize: 25,
     textAlign: 'center',
-    paddingHorizontal: 10,
-  },
-});
-export default styles;
+    paddingHorizontal: 10
+  }
+}
+export default styles

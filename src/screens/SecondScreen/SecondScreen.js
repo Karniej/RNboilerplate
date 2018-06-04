@@ -1,29 +1,36 @@
-import React from 'react';
-import { Text, View, TouchableOpacity } from 'react-native';
-import PropTypes from 'prop-types';
-import styles from './styles';
+import React from 'react'
+import PropTypes from 'prop-types'
+import ContentWrapper from '../../components/ContentWrapper/ContentWrapper'
+import Header from '../../components/Header/Header'
+import MainButton from '../../components/MainButton/MainButton'
+import { colors } from '../../config'
 
 class SecondScreen extends React.Component {
   static navigationOptions = {
     title: 'Second',
     drawerLabel: 'Second',
     headerStyle: {
-      backgroundColor: 'black',
-    },
-  };
+      backgroundColor: colors.secondaryColor
+    }
+  }
   render() {
-    const { navigate } = this.props.navigation;
+    const { navigation } = this.props
+
     return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to Second Screen</Text>
-        <TouchableOpacity title="Third" onPress={() => navigate('Third')}>
-          <Text style={{ fontSize: 18, color: '#00d664' }}>Goto Third</Text>
-        </TouchableOpacity>
-      </View>
-    );
+      <ContentWrapper>
+        <Header
+          title='Welcome to Second Screen'
+        />
+        <MainButton
+          title='Third Screen'
+          navigation={navigation}
+          routeName='Third'
+        />
+      </ContentWrapper>
+    )
   }
 }
 SecondScreen.propTypes = {
-  navigation: PropTypes.shape({ navigate: PropTypes.func.isRequired }).isRequired,
-};
-export default SecondScreen;
+  navigation: PropTypes.shape({ navigate: PropTypes.func.isRequired }).isRequired
+}
+export default SecondScreen

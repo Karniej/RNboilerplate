@@ -1,26 +1,33 @@
-import React from 'react';
-import { Text, View, TouchableOpacity } from 'react-native';
-import PropTypes from 'prop-types';
-import styles from './styles';
+import React from 'react'
+import PropTypes from 'prop-types'
+import Header from '../../components/Header/Header'
+import MainButton from '../../components/MainButton/MainButton'
+import ContentWrapper from '../../components/ContentWrapper/ContentWrapper'
 
 class LoginScreen extends React.Component {
   static navigationOptions = {
-    title: 'Login',
-  };
+    title: 'Log In',
+    headerLeft: null
+  }
   render() {
-    const { navigate } = this.props.navigation;
+    const { navigation } = this.props
+
     return (
-      <View testID="loginScreen" style={styles.container}>
-        <Text style={styles.welcome}>This is LoginScreen</Text>
-        <TouchableOpacity testID="logIn" onPress={() => navigate('DrawerStack')}>
-          <Text style={{ fontSize: 18, color: '#00d664' }}>Log In</Text>
-        </TouchableOpacity>
-      </View>
-    );
+      <ContentWrapper>
+        <Header
+          title='This is Login Screen'
+        />
+        <MainButton
+          title='Log In'
+          routeName='DrawerStack'
+          navigation={navigation}
+        />
+      </ContentWrapper>
+    )
   }
 }
 LoginScreen.propTypes = {
-  navigation: PropTypes.shape({ navigate: PropTypes.func.isRequired }).isRequired,
-};
+  navigation: PropTypes.shape({ navigate: PropTypes.func.isRequired }).isRequired
+}
 
-export default LoginScreen;
+export default LoginScreen

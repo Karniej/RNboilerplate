@@ -1,17 +1,18 @@
-import { StackNavigator } from 'react-navigation';
-import LoginScreen from '../screens/LoginScreen/LoginScreen';
+import { StackNavigator } from 'react-navigation'
+import LoginScreen from '../screens/LoginScreen/LoginScreen'
+import { colors } from '../config'
 
 const LoginStack = StackNavigator(
   {
-    LoginScreen: { screen: LoginScreen },
+    LoginScreen: { screen: LoginScreen }
   },
   {
     headerMode: 'none',
     navigationOptions: {
       headerBackTitle: null,
-      headerStyle: { backgroundColor: '#00d664' },
-      headerTintColor: 'white',
-    },
-  },
-);
-export default LoginStack;
+      headerStyle: { backgroundColor: colors.accentColor },
+      headerTintColor: colors.primaryColor
+    }
+  }
+)
+export default LoginStack
