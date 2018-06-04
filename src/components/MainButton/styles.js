@@ -1,16 +1,14 @@
-import { StyleSheet } from 'react-native'
 import { colors, constants } from '../../config'
 
 const styles = {
   container: {
-    borderRadius: 5,
-    borderWidth: StyleSheet.hairlineWidth,
-    borderColor: colors.accentColor,
-    padding: constants.defaultMargin
+    borderRadius: 3,
+    padding: constants.defaultMargin,
+    backgroundColor: colors.accentColor
   },
   textStyle: {
     fontSize: 18,
-    color: colors.accentColor
+    color: colors.primaryColor
   }
 }
 export default styles
