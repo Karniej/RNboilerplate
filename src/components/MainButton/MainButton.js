@@ -5,7 +5,7 @@ import PropTypes from 'prop-types'
 
 import styles from './styles'
 
-const { textStyle } = styles
+const { container, textStyle } = styles
 
 class MainButton extends React.Component {
   navigationHelper = () => {
@@ -27,6 +27,7 @@ class MainButton extends React.Component {
 
     return (
       <TouchableOpacity
+        style={container}
         onPress={() => {
           return this.navigationHelper()
         }}

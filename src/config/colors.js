@@ -1,7 +1,7 @@
 const colors = {
   primaryColor: '#F5FCFF',
-  secondaryColor: '#000000',
-  accentColor: '#00d664'
+  secondaryColor: '#1a090d',
+  accentColor: '#fcc500'
 }
 
 export default colors
