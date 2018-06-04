@@ -5,6 +5,7 @@ import styles from './styles'
 import Header from '../../components/Header/Header'
 import MainButton from '../../components/MainButton/MainButton'
 import ContentWrapper from '../../components/ContentWrapper/ContentWrapper'
+import { colors } from '../../config'
 
 const { container, textStyle, subContainer } = styles
 class HomeScreen extends React.Component {
@@ -33,18 +34,21 @@ class HomeScreen extends React.Component {
           style={container}
         >
           <View
-            style={[subContainer, { backgroundColor: '#00d664' }]}
+            style={[subContainer, { backgroundColor: colors.accentColor }]}
           >
             <Text
-              style={[textStyle, { color: 'black' }]}
-            />
+              style={[textStyle, { color: colors.secondaryColor }]}
+            >
+              Mobile Discussion Panel
+            </Text>
           </View>
           <View
-            style={[subContainer, { backgroundColor: 'black' }]}
+            style={[subContainer, { backgroundColor: colors.secondaryColor }]}
           >
             <Text
-              style={[textStyle, { color: 'white' }]}
-            />
+              style={[textStyle, { color: colors.primaryColor }]}
+            >Are you ready to Rock?
+            </Text>
           </View>
         </View>
       </ContentWrapper>
