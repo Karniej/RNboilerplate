@@ -8,7 +8,7 @@ const styles = {
   },
   textStyle: {
     fontSize: 18,
-    color: colors.primaryColor
+    color: colors.secondaryColor
   }
 }
 export default styles
