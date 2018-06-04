@@ -1,3 +1,5 @@
-const initialState = {};
-const dummyReducer = (state = initialState) => state;
-export default dummyReducer;
+const initialState = {}
+const dummyReducer = (state = initialState) => {
+  return state
+}
+export default dummyReducer
