@@ -1,22 +1,33 @@
-import React from 'react';
-import { DrawerNavigator, DrawerItems } from 'react-navigation';
-import { ScrollView, SafeAreaView } from 'react-native';
-import screens from './screens';
+import React from 'react'
+import { DrawerNavigator, DrawerItems } from 'react-navigation'
+import { ScrollView, SafeAreaView } from 'react-native'
+import screens from './screens'
+import { colors, constants } from '../config'
+import styles from './styles'
 
-const CustomDrawer = props => (
-  <ScrollView style={{ flex: 1 }}>
-    <SafeAreaView forceInset={{ top: 'always', horizontal: 'never' }}>
-      <DrawerItems {...props} />
-    </SafeAreaView>
-  </ScrollView>
-);
+const { container } = styles
+const CustomDrawer = (props) => {
+  return (
+    <ScrollView
+      style={container}
+    >
+      <SafeAreaView
+        forceInset={{ top: 'always', horizontal: 'never' }}
+      >
+        <DrawerItems
+          {...props}
+        />
+      </SafeAreaView>
+    </ScrollView>
+  )
+}
 
 const DrawerStack = DrawerNavigator(screens, {
-  drawerWidth: 245,
+  drawerWidth: constants.drawerWidth,
   contentComponent: CustomDrawer,
-  drawerBackgroundColor: '#00d664',
+  drawerBackgroundColor: colors.accentColor,
   contentOptions: {
-    activeTintColor: 'white',
-  },
-});
-export default DrawerStack;
+    activeTintColor: colors.primaryColor
+  }
+})
+export default DrawerStack

@@ -7,11 +7,10 @@ This Boilerplate contains:<br>
 1.  AirBnb ESlint configuration. <br>
 2.  Redux state management connected. <br>
 3.  React Navigation with simple main Stack Navigator for Login screen and Drawer Navigator.<br>
-4.  Hooked up Jest for unit testing.<br>
+4.  Hooked up Jest and Enzyme for the best unit testing.<br>
 5.  Babel-eslint and Prettier-eslint as dev dependency. <br>
 6.  Redux-logger middleware for nice console debugging redux store. <br>
-7.  Added Detox for E2E testing.<br>
-8.  Linked react-native-vector-icons library.<br>
+7.  Linked react-native-vector-icons library.<br>
 
 ## Usage
 
@@ -25,17 +24,8 @@ Installation:<br>
 > For example:<br>
 > react-native-rename TravelApp<br>
 
-### Detox Tests
-
-In order to make Detox Tests working you have to go to <br>
-/../android/app/src/androidTest/java/com/boilerplate/DetoxTest.java and change the<br>
-package com.boilerplate to your app name like this - package com.yourappname<br>
-<br>
-Also you'll need to install applesimutils to run the detox cli:<br>
-
-> https://github.com/wix/AppleSimulatorUtils<br>
-> brew tap wix/brew<br>
-> brew install wix/brew/applesimutils<br>
+#### Currently there's some kind of bug in babel-plugin-jest-hoist, that's why I patched this package.
+#### Just run "yarn patch-package" before running your tests and everything will run as it should. 
 
 ### Future update ideas
 
