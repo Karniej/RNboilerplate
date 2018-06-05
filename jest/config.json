@@ -1,6 +1,7 @@
 {
   "preset": "react-native",
   "rootDir": "../",
+  "timers": "fake",
   "testPathIgnorePatterns": ["__e2e__", "node_modules"],
   "transformIgnorePatterns": ["node_modules/(?!react-native|react-navigation)/"],
   "transform": {
