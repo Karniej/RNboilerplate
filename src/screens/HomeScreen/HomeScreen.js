@@ -47,7 +47,7 @@ class HomeScreen extends React.Component {
           >
             <Text
               style={[textStyle, { color: colors.primaryColor }]}
-            >Are you ready to Rock?
+            >Ok , it's enough
             </Text>
           </View>
         </View>
