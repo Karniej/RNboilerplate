@@ -2,8 +2,9 @@ import HomeScreen from '../screens/HomeScreen/HomeScreen'
 import SecondScreen from '../screens/SecondScreen/SecondScreen'
 import ThirdScreen from '../screens/ThirdScreen/ThirdScreen'
 
-// Screens after logged in
-const screens = {
+// This is list of screens avaliable in the Stack Navigator after logging in
+// If you want to add any screen to the Drawer Stack , simply add a screen below:
+const drawerScreens = {
   Home: {
     screen: HomeScreen
   },
@@ -15,4 +16,4 @@ const screens = {
   }
 }
 
-export default screens
+export default drawerScreens

@@ -1,7 +1,7 @@
 import React from 'react'
 import { DrawerNavigator, DrawerItems } from 'react-navigation'
 import { ScrollView, SafeAreaView } from 'react-native'
-import screens from './screens'
+import drawerScreens from './drawerScreens'
 import { colors, constants } from '../config'
 import styles from './styles'
 
@@ -22,7 +22,7 @@ const CustomDrawer = (props) => {
   )
 }
 
-const DrawerStack = DrawerNavigator(screens, {
+const DrawerStack = DrawerNavigator(drawerScreens, {
   drawerWidth: constants.drawerWidth,
   contentComponent: CustomDrawer,
   drawerBackgroundColor: colors.accentColor,

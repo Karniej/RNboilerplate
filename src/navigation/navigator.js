@@ -13,7 +13,7 @@ const noTransitionConfig = () => {
   }
 }
 
-const navigator = StackNavigator(
+const Navigator = StackNavigator(
   {
     LoginStack: {
       screen: LoginStack
@@ -28,4 +28,4 @@ const navigator = StackNavigator(
   }
 )
 
-export default navigator
+export default Navigator
