@@ -511,8 +511,8 @@
     to-fast-properties "^2.0.0"
 
 "@types/node@*":
-  version "10.3.2"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.3.2.tgz#3840ec6c12556fdda6e0e6d036df853101d732a4"
+  version "10.3.3"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-10.3.3.tgz#8798d9e39af2fa604f715ee6a6b19796528e46c3"
 
 abab@^1.0.4:
   version "1.0.4"
@@ -550,8 +550,8 @@ acorn@^3.0.4:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-3.3.0.tgz#45e37fb39e8da3f25baee3ff5369e2bb5f22017a"
 
 acorn@^5.0.0, acorn@^5.3.0, acorn@^5.5.0:
-  version "5.6.2"
-  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.6.2.tgz#b1da1d7be2ac1b4a327fb9eab851702c5045b4e7"
+  version "5.7.1"
+  resolved "https://registry.yarnpkg.com/acorn/-/acorn-5.7.1.tgz#f095829297706a7c9776958c0afc8930a9b9d9d8"
 
 ajv-keywords@^2.1.0:
   version "2.1.1"
@@ -3089,8 +3089,8 @@ ignore@^3.3.3:
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-3.3.8.tgz#3f8e9c35d38708a3a7e0e9abb6c73e7ee7707b2b"
 
 image-size@^0.6.0:
-  version "0.6.2"
-  resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.6.2.tgz#8ee316d4298b028b965091b673d5f1537adee5b4"
+  version "0.6.3"
+  resolved "https://registry.yarnpkg.com/image-size/-/image-size-0.6.3.tgz#e7e5c65bb534bd7cdcedd6cb5166272a85f75fb2"
 
 import-lazy@^2.1.0:
   version "2.1.0"
@@ -5095,17 +5095,17 @@ react-devtools-core@3.1.0:
     ws "^2.0.3"
 
 react-dom@^16.3.2:
-  version "16.4.0"
-  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.0.tgz#099f067dd5827ce36a29eaf9a6cdc7cbf6216b1e"
+  version "16.4.1"
+  resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.4.1.tgz#7f8b0223b3a5fbe205116c56deb85de32685dad6"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-react-is@^16.3.2, react-is@^16.4.0:
-  version "16.4.0"
-  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.4.0.tgz#cc9fdc855ac34d2e7d9d2eb7059bbc240d35ffcf"
+react-is@^16.3.2, react-is@^16.4.1:
+  version "16.4.1"
+  resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.4.1.tgz#d624c4650d2c65dbd52c72622bbf389435d9776e"
 
 react-lifecycles-compat@^3.0.2:
   version "3.0.4"
@@ -5261,13 +5261,13 @@ react-test-renderer@16.3.2:
     react-is "^16.3.2"
 
 react-test-renderer@^16.0.0-0:
-  version "16.4.0"
-  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.4.0.tgz#0dbe0e24263e94e1830c7afb1f403707fad313a3"
+  version "16.4.1"
+  resolved "https://registry.yarnpkg.com/react-test-renderer/-/react-test-renderer-16.4.1.tgz#f2fb30c2c7b517db6e5b10ed20bb6b0a7ccd8d70"
   dependencies:
     fbjs "^0.8.16"
     object-assign "^4.1.1"
     prop-types "^15.6.0"
-    react-is "^16.4.0"
+    react-is "^16.4.1"
 
 react-timer-mixin@^0.13.2:
   version "0.13.3"
@@ -5281,8 +5281,8 @@ react-transform-hmr@^1.0.4:
     react-proxy "^1.1.7"
 
 react@^16.3.2:
-  version "16.4.0"
-  resolved "https://registry.yarnpkg.com/react/-/react-16.4.0.tgz#402c2db83335336fba1962c08b98c6272617d585"
+  version "16.4.1"
+  resolved "https://registry.yarnpkg.com/react/-/react-16.4.1.tgz#de51ba5764b5dbcd1f9079037b862bd26b82fe32"
   dependencies:
     fbjs "^0.8.16"
     loose-envify "^1.1.0"
@@ -5344,8 +5344,8 @@ redux-logger@^3.0.6:
     deep-diff "^0.3.5"
 
 redux-mock-store@^1.5.1:
-  version "1.5.1"
-  resolved "https://registry.yarnpkg.com/redux-mock-store/-/redux-mock-store-1.5.1.tgz#fca4335392e66605420b5559fe02fc5b8bb6d63c"
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/redux-mock-store/-/redux-mock-store-1.5.3.tgz#1f10528949b7ce8056c2532624f7cafa98576c6d"
   dependencies:
     lodash.isplainobject "^4.0.6"
 
@@ -6155,8 +6155,8 @@ typescript-eslint-parser@^11.0.0:
     semver "5.4.1"
 
 typescript@^2.5.1:
-  version "2.9.1"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.1.tgz#fdb19d2c67a15d11995fd15640e373e09ab09961"
+  version "2.9.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
 
 ua-parser-js@^0.7.18:
   version "0.7.18"

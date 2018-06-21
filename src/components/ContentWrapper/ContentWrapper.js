@@ -79,7 +79,7 @@ class ContentWrapper extends React.Component {
 }
 
 ContentWrapper.propTypes = {
-  children: PropTypes.node,
-  additionalStyles: PropTypes.object
+  additionalStyles: PropTypes.object,
+  children: PropTypes.node
 }
 export default ContentWrapper

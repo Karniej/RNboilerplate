@@ -22,14 +22,22 @@ class MainButton extends React.Component {
     navigation.navigate(routeName)
   }
 
+  handleOnPress = () => {
+    const { onPress } = this.props
+    if (onPress) {
+      onPress()
+    } else {
+      this.navigationHelper()
+    }
+  }
   render() {
-    const { title } = this.props
+    const { title, additionalStyles } = this.props
 
     return (
       <TouchableOpacity
-        style={container}
+        style={[container, additionalStyles]}
         onPress={() => {
-          return this.navigationHelper()
+          return this.handleOnPress()
         }}
       >
         <Text
@@ -45,12 +53,14 @@ MainButton.defaultProps = {
 }
 
 MainButton.propTypes = {
+  additionalStyles: PropTypes.object,
   navigation: PropTypes.shape({
     navigate: PropTypes.func.isRequired
-  }).isRequired,
+  }),
   resetStack: PropTypes.bool,
-  routeName: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  routeName: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  onPress: PropTypes.func
 }
 
 export default MainButton
