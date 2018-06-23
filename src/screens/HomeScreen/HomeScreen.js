@@ -1,8 +1,6 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
-import Header from '../../components/Header/Header'
-import MainButton from '../../components/MainButton/MainButton'
-import ContentWrapper from '../../components/ContentWrapper/ContentWrapper'
+import { ContentWrapper, Header, MainButton } from '../../components'
 
 class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -19,7 +17,7 @@ class HomeScreen extends React.Component {
     return (
       <ContentWrapper>
         <Header
-          title='Netguru React Native Boilerplate'
+          title='React Native Boilerplate'
         />
         <MainButton
           title='Second Screen'
