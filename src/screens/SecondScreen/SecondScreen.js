@@ -1,8 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import ContentWrapper from '../../components/ContentWrapper/ContentWrapper'
-import Header from '../../components/Header/Header'
-import MainButton from '../../components/MainButton/MainButton'
+import { Header, ContentWrapper, MainButton } from '../../components'
+
 import { colors } from '../../config'
 
 class SecondScreen extends React.Component {

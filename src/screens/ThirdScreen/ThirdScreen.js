@@ -1,9 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Header, ContentWrapper, MainButton } from '../../components'
 
-import ContentWrapper from '../../components/ContentWrapper/ContentWrapper'
-import Header from '../../components/Header/Header'
-import MainButton from '../../components/MainButton/MainButton'
 import { colors } from '../../config'
 
 class ThirdScreen extends React.Component {

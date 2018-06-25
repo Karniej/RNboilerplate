@@ -1,14 +1,17 @@
 import * as React from 'react'
-import { View, FlatList } from 'react-native'
+import { View, FlatList, ActivityIndicator } from 'react-native'
 import _ from 'lodash'
 import styles from './styles'
-import MainButton from '../../components/MainButton/MainButton'
-import ContentWrapper from '../../components/ContentWrapper/ContentWrapper'
-import { apiUrl } from '../../config/apiConfig'
-import SingleItem from '../../components/SingleItem/SingleItem'
+import { MainButton, ContentWrapper, SingleItem } from '../../components'
+import { colors, apiUrl } from '../../config'
 
 const {
-  contentWrapperStyles, buttonsContainer, mainButtonStyles, flatListStyles
+  contentWrapperStyles,
+  buttonsContainer,
+  mainButtonStyles,
+  flatListStyles,
+  visible,
+  invisible
 } = styles
 
 class FetchingTestScreen extends React.Component {
@@ -24,16 +27,18 @@ class FetchingTestScreen extends React.Component {
     super()
     this.state = {
       itemList: [],
-      page: 1
+      page: 1,
+      isFetching: false
     }
   }
 
   setList = (list) => {
-    this.setState({ itemList: [...this.state.itemList, ...list] })
+    this.setState({ itemList: [...this.state.itemList, ...list], isFetching: false })
   }
 
   async fetchData() {
     try {
+      await this.setState({ isFetching: true })
       const response = await fetch(apiUrl(this.state.page), {
         method: 'GET',
         headers: {
@@ -104,6 +109,11 @@ class FetchingTestScreen extends React.Component {
           onEndReached={this.fetchMoreData}
           onEndTreshHold={1}
           renderItem={this.renderItem}
+        />
+        <ActivityIndicator
+          style={this.state.isFetching ? visible : invisible}
+          size='large'
+          color={colors.accentColor}
         />
       </ContentWrapper>
     )

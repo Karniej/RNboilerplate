@@ -2,9 +2,7 @@ import * as React from 'react'
 import { Text, View } from 'react-native'
 import PropTypes from 'prop-types'
 import styles from './styles'
-import Header from '../../components/Header/Header'
-import MainButton from '../../components/MainButton/MainButton'
-import ContentWrapper from '../../components/ContentWrapper/ContentWrapper'
+import { Header, ContentWrapper, MainButton } from '../../components'
 import { colors } from '../../config'
 
 const { container, textStyle, subContainer } = styles
@@ -23,7 +21,7 @@ class HomeScreen extends React.Component {
     return (
       <ContentWrapper>
         <Header
-          title='Netguru React Native Boilerplate'
+          title='React Native Boilerplate'
         />
         <MainButton
           title='Second Screen'

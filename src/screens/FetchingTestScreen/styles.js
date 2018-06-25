@@ -12,6 +12,12 @@ const styles = {
   },
   flatListStyles: {
     width: '100%'
+  },
+  visible: {
+    display: 'flex'
+  },
+  invisible: {
+    display: 'none'
   }
 }
 export default styles

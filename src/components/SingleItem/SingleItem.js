@@ -15,7 +15,7 @@ class SingleItem extends React.Component {
     super(props)
     this.animatedView = new Animated.Value(0)
     this.animatedText = new Animated.Value(0)
-    this.animatedImage = new Animated.Value(10)
+    this.animatedImage = new Animated.Value(0)
   }
 
   componentDidMount() {
@@ -28,19 +28,19 @@ class SingleItem extends React.Component {
 
     const animateView = Animated.timing(this.animatedView, {
       easing: Easing.elastic(0.9),
-      toValue: 80,
+      toValue: 1,
       duration: animationDuration,
       delay: animationDelay
     })
     const animateText = Animated.timing(this.animatedText, {
-      easing: Easing.inOut(Easing.ease),
+      easing: Easing.elastic(0.9),
       toValue: 1,
       duration: animationDuration,
       delay: animationDelay
     })
     const animateImage = Animated.timing(this.animatedImage, {
       easing: Easing.elastic(0.9),
-      toValue: 80,
+      toValue: 1,
       duration: animationDuration,
       delay: animationDelay
     })
@@ -61,7 +61,7 @@ class SingleItem extends React.Component {
         style={[singleItemStyles, { opacity: animateView }]}
       >
         <Animated.Image
-          style={[singleItemImageStyle, { width: animateImage, height: animateImage }]}
+          style={[singleItemImageStyle, { opacity: animateImage }]}
           source={{ uri: item.image_url }}
           resizeMode='contain'
         />
