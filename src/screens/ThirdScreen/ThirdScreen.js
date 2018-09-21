@@ -12,6 +12,7 @@ class ThirdScreen extends React.Component {
       backgroundColor: colors.secondaryColor
     }
   }
+
   render() {
     const { navigation } = this.props
 

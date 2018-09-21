@@ -1,4 +1,6 @@
-import { HomeScreen, SecondScreen, ThirdScreen, FetchingTestScreen } from '../screens'
+import {
+  HomeScreen, SecondScreen, ThirdScreen, FetchingTestScreen
+} from '../screens'
 
 // Screens after logged in
 const screens = {

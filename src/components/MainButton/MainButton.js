@@ -11,11 +11,12 @@ class MainButton extends React.Component {
   navigationHelper = () => {
     const { navigation, routeName, resetStack } = this.props
     if (resetStack) {
+      console.log({ navigation })
       navigation.dispatch(
         NavigationActions.reset({
           index: 0,
           key: null,
-          actions: [NavigationActions.navigate({ routeName })]
+          actions: [NavigationActions.navigate(routeName)]
         })
       )
     }
@@ -30,6 +31,7 @@ class MainButton extends React.Component {
       this.navigationHelper()
     }
   }
+
   render() {
     const { title, additionalStyles } = this.props
 
@@ -42,7 +44,8 @@ class MainButton extends React.Component {
       >
         <Text
           style={textStyle}
-        >{title}
+        >
+          {title}
         </Text>
       </TouchableOpacity>
     )
