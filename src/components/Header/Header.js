@@ -6,7 +6,8 @@ import styles from './styles'
 const Header = ({ title, additionalStyles }) => {
   return <Text
     style={[styles.header, additionalStyles]}
-  >{title}
+  >
+    {title}
   </Text>
 }
 

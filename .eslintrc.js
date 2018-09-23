@@ -1,7 +1,7 @@
 module.exports = {
   parser: 'babel-eslint',
   extends: 'airbnb',
-  plugins: ['react', 'react-native', 'jsx-a11y', 'import'],
+  plugins: ['detox', 'react', 'react-native', 'jsx-a11y', 'import'],
   settings: {
     'import/resolver': 'reactnative'
   },
@@ -39,7 +39,8 @@ module.exports = {
     'eol-last': ['error', 'always'],
     semi: ['error', 'never'],
     'comma-dangle': ['error', 'never'],
-    'react/forbid-prop-types': ['error', { forbid: ['any'] }]
+    'react/forbid-prop-types': ['error', { forbid: ['any'] }],
+    'class-methods-use-this': [2, { exceptMethods: ['fetchData'] }]
   },
   globals: {
     fetch: false,

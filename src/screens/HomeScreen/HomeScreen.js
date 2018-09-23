@@ -1,6 +1,7 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
-import { ContentWrapper, Header, MainButton } from '../../components'
+import { Header, ContentWrapper, MainButton } from '../../components'
+import { colors } from '../../config'
 
 class HomeScreen extends React.Component {
   static navigationOptions = {

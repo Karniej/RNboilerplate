@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { ContentWrapper, Header, MainButton } from '../../components'
+import { Header, ContentWrapper, MainButton } from '../../components'
 
 const LoginScreen = ({ navigation }) => {
   return (

@@ -1,6 +1,5 @@
 import React from 'react'
 import { TouchableOpacity, Text } from 'react-native'
-import NavigationActions from 'react-navigation/src/NavigationActions'
 import PropTypes from 'prop-types'
 
 import styles from './styles'
@@ -11,30 +10,41 @@ class MainButton extends React.Component {
   navigationHelper = () => {
     const { navigation, routeName, resetStack } = this.props
     if (resetStack) {
+      console.log({ navigation })
       navigation.dispatch(
-        NavigationActions.reset({
+        navigation.actions.reset({
           index: 0,
           key: null,
-          actions: [NavigationActions.navigate({ routeName })]
+          actions: [navigation.navigate(routeName)]
         })
       )
     }
     navigation.navigate(routeName)
   }
 
+  handleOnPress = () => {
+    const { onPress } = this.props
+    if (onPress) {
+      onPress()
+    } else {
+      this.navigationHelper()
+    }
+  }
+
   render() {
-    const { title } = this.props
+    const { title, additionalStyles } = this.props
 
     return (
       <TouchableOpacity
-        style={container}
+        style={[container, additionalStyles]}
         onPress={() => {
-          return this.navigationHelper()
+          return this.handleOnPress()
         }}
       >
         <Text
           style={textStyle}
-        >{title}
+        >
+          {title}
         </Text>
       </TouchableOpacity>
     )
@@ -45,12 +55,14 @@ MainButton.defaultProps = {
 }
 
 MainButton.propTypes = {
+  additionalStyles: PropTypes.object,
   navigation: PropTypes.shape({
     navigate: PropTypes.func.isRequired
-  }).isRequired,
+  }),
   resetStack: PropTypes.bool,
-  routeName: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired
+  routeName: PropTypes.string,
+  title: PropTypes.string.isRequired,
+  onPress: PropTypes.func
 }
 
 export default MainButton

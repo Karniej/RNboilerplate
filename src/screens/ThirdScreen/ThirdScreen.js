@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Header, ContentWrapper, MainButton } from '../../components'
 
-import { ContentWrapper, Header, MainButton } from '../../components'
 import { colors } from '../../config'
 
 class ThirdScreen extends React.Component {
@@ -12,6 +12,7 @@ class ThirdScreen extends React.Component {
       backgroundColor: colors.secondaryColor
     }
   }
+
   render() {
     const { navigation } = this.props
 

@@ -12,8 +12,7 @@ const LoginStack = StackNavigator(
       title: 'Log In',
       headerBackTitle: null,
       headerStyle: { backgroundColor: colors.accentColor },
-      headerTintColor: colors.secondaryColor,
-      headerLeft: null
+      headerTintColor: colors.secondaryColor
     }
   }
 )

@@ -8,12 +8,13 @@ const { container } = styles
 const ContentWrapper = ({ children, additionalStyles }) => {
   return <View
     style={[container, additionalStyles]}
-  >{children}
-         </View>
+  >
+    {children}
+  </View>
 }
 
 ContentWrapper.propTypes = {
-  children: PropTypes.node,
-  additionalStyles: PropTypes.object
+  additionalStyles: PropTypes.object,
+  children: PropTypes.node
 }
 export default ContentWrapper
