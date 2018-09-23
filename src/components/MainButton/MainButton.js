@@ -1,6 +1,5 @@
 import React from 'react'
 import { TouchableOpacity, Text } from 'react-native'
-import NavigationActions from 'react-navigation/src/NavigationActions'
 import PropTypes from 'prop-types'
 
 import styles from './styles'
@@ -13,10 +12,10 @@ class MainButton extends React.Component {
     if (resetStack) {
       console.log({ navigation })
       navigation.dispatch(
-        NavigationActions.reset({
+        navigation.actions.reset({
           index: 0,
           key: null,
-          actions: [NavigationActions.navigate(routeName)]
+          actions: [navigation.navigate(routeName)]
         })
       )
     }

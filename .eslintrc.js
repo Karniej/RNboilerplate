@@ -1,7 +1,7 @@
 module.exports = {
   parser: 'babel-eslint',
   extends: 'airbnb',
-  plugins: ['react', 'react-native', 'jsx-a11y', 'import'],
+  plugins: ['detox', 'react', 'react-native', 'jsx-a11y', 'import'],
   settings: {
     'import/resolver': 'reactnative'
   },

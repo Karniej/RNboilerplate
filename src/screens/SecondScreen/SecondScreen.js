@@ -5,7 +5,7 @@ import { Header, ContentWrapper, MainButton } from '../../components'
 
 import { colors } from '../../config'
 
-const options = ['asdasd', 'asdasdas', 'asdasjidjasld', 'Asdasdajsdl']
+const options = ['Cherry', 'Apple', 'Orange', 'Tomato']
 class SecondScreen extends React.Component {
   static navigationOptions = {
     title: 'Second',
