@@ -1,11 +1,12 @@
 import React from 'react'
 import { Platform } from 'react-native'
-import { StackNavigator } from 'react-navigation'
-import DrawerStack from './DrawerStack'
-import { colors } from '../config'
+import { createStackNavigator } from 'react-navigation'
 import AppIcon from '../components/AppIcon/AppIcon'
+// import { Icon } from '@netguru-team-m/liquid-design-react-native'
+import DrawerStack from './DrawerStack'
+import { colors, constants } from '../config'
 
-const DrawerNavigation = StackNavigator(
+const DrawerNavigation = createStackNavigator(
   {
     DrawerStack: { screen: DrawerStack }
   },
@@ -17,11 +18,14 @@ const DrawerNavigation = StackNavigator(
         headerStyle: {
           backgroundColor: colors.secondaryColor
         },
+        headerBackTitleVisible: false,
         gesturesEnabled: false,
         headerLeft: (
           <AppIcon
             name={Platform.OS === 'ios' ? 'ios-menu-outline' : 'md-menu'}
             size={30}
+            color={colors.primaryColor}
+            style={{ marginLeft: constants.defaultMargin }}
             onPress={() => {
               return navigation.navigate('DrawerToggle')
             }}

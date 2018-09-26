@@ -1,8 +1,8 @@
-import { StackNavigator } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation'
 import LoginScreen from '../screens/LoginScreen/LoginScreen'
 import { colors } from '../config'
 
-const LoginStack = StackNavigator(
+const LoginStack = createStackNavigator(
   {
     LoginScreen: { screen: LoginScreen }
   },
@@ -10,9 +10,10 @@ const LoginStack = StackNavigator(
     headerMode: 'none',
     navigationOptions: {
       title: 'Log In',
-      headerBackTitle: null,
+      // headerBackTitle: false,
       headerStyle: { backgroundColor: colors.accentColor },
-      headerTintColor: colors.secondaryColor
+      headerTintColor: colors.secondaryColor,
+      headerBackTitleVisible: false
     }
   }
 )

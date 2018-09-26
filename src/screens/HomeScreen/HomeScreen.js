@@ -1,7 +1,6 @@
 import * as React from 'react'
 import PropTypes from 'prop-types'
 import { Header, ContentWrapper, MainButton } from '../../components'
-import { colors } from '../../config'
 
 class HomeScreen extends React.Component {
   static navigationOptions = {
@@ -20,6 +19,7 @@ class HomeScreen extends React.Component {
         <Header
           title='React Native Boilerplate'
         />
+
         <MainButton
           title='Second Screen'
           routeName='Second'
